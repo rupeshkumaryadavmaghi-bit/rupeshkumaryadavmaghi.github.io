@@ -1,81 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rupesh Kumar | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rupesh Kumar Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#667eea,#764ba2,#ff6b6b);
+    background-size:400% 400%;
+    animation:bg 8s ease infinite;
+}
+
+@keyframes bg{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.container{
+    text-align:center;
+    color:white;
+    padding:40px;
+}
+
+h1{
+    font-size:4rem;
+    margin-bottom:10px;
+}
+
+h2{
+    font-size:1.5rem;
+    margin-bottom:20px;
+    color:#ffd369;
+}
+
+p{
+    font-size:1.1rem;
+    max-width:600px;
+    margin:auto;
+    line-height:1.8;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 35px;
+    background:white;
+    color:#764ba2;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+    background:#ffd369;
+}
+
+.social{
+    margin-top:25px;
+}
+
+.social a{
+    color:white;
+    text-decoration:none;
+    margin:0 10px;
+    font-size:1.2rem;
+}
+</style>
 </head>
 <body>
 
-  <nav>
-    <div class="logo">Rupesh.</div>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+<div class="container">
+    <h1>Hi, I'm Rupesh Kumar</h1>
+    <h2>B.Tech CSE Student</h2>
 
-  <section class="hero">
-    <div class="content">
-      <h1>Hi, I'm <span>Rupesh Kumar</span></h1>
-      <h2>Web Developer & CS Student</h2>
-      <p>Creating modern websites and digital experiences.</p>
-
-      <div class="buttons">
-        <a href="#" class="btn">Download CV</a>
-        <a href="#" class="btn btn2">Contact Me</a>
-      </div>
-    </div>
-
-    <div class="image">
-      <img src="https://via.placeholder.com/350" alt="Profile">
-    </div>
-  </section>
-
-  <section id="about" class="card">
-    <h2>About Me</h2>
     <p>
-      I am a Computer Science student passionate about web development,
-      UI design, and creating innovative digital solutions.
+        Welcome to my Portfolio Website.
+        Passionate about Web Development, Programming,
+        and Technology. Explore my projects, skills,
+        and achievements.
     </p>
-  </section>
 
-  <section id="skills" class="card">
-    <h2>Skills</h2>
-    <div class="skills">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>Python</span>
-      <span>MySQL</span>
-      <span>GitHub</span>
+    <a href="#" class="btn">View Projects</a>
+
+    <div class="social">
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+        <a href="#">Instagram</a>
     </div>
-  </section>
-
-  <section id="projects" class="card">
-    <h2>Projects</h2>
-
-    <div class="project">
-      <h3>Cricket Score Website</h3>
-      <p>Live cricket scores and match statistics platform.</p>
-    </div>
-
-    <div class="project">
-      <h3>Portfolio Website</h3>
-      <p>Personal portfolio with animations and responsive design.</p>
-    </div>
-  </section>
-
-  <section id="contact" class="card">
-    <h2>Contact</h2>
-    <p>Email: yourmail@gmail.com</p>
-    <p>LinkedIn: linkedin.com/in/yourprofile</p>
-    <p>GitHub: github.com/yourusername</p>
-  </section>
+</div>
 
 </body>
 </html>
-
